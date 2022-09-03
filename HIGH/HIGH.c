@@ -25,11 +25,12 @@ int main()
     {
         for (int d = 1; d < WEIGHT; d++)
         {
-            record[c][d*3]=abs(R[c][d-1]-R[c][d+1]);
-            record[c][d*3+1]=abs(G[c][d-1]-G[c][d+1]);
-            record[c][d*3+2]=abs(B[c][d-1]-B[c][d+1]);
+            record[c][d * 3] = abs(R[c][d - 1] - R[c][d + 1]);
+            record[c][d * 3 + 1] = abs(G[c][d - 1] - G[c][d + 1]);
+            record[c][d * 3 + 2] = abs(B[c][d - 1] - B[c][d + 1]);
         }
     }
-    fwrite(record,sizeof(unsigned char),HEIGHT*WEIGHT*3,write);
+
+    fwrite(record, sizeof(unsigned char), HEIGHT * WEIGHT * 3, write);
     return 0;
 }
