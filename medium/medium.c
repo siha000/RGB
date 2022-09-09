@@ -68,15 +68,9 @@ int main()
                               record[c + 1][d + 5],
                               record[c + 1][d - 1]};
 
-            char record_R, record_G, record_B;
-
-            record_R = bubble_sort(data_R);
-            record_G = bubble_sort(data_G);
-            record_B = bubble_sort(data_B);
-
-            result[c - 1][d - 3] = record_R;
-            result[c - 1][d - 2] = record_G;
-            result[c - 1][d - 1] = record_B;
+            result[c - 1][d - 3] = bubble_sort(data_R);
+            result[c - 1][d - 2] = bubble_sort(data_G);
+            result[c - 1][d - 1] = bubble_sort(data_B);
         }
     }
 
