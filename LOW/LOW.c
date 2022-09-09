@@ -36,5 +36,7 @@ int main()
         }
     }
     fwrite(result, sizeof(unsigned char), HEIGHT * WEIGHT * 3, write);
+    fclose(read);
+    fclose(write);
     return 0;
 }
